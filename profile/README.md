@@ -1,33 +1,115 @@
-# CodifiedLabs
+<div align="center">
 
-Production-ready agent skills, prompt architecture, and workflows for Claude Code, Cursor, and modern AI engineering environments.
+# Codified Labs
 
----
+**Deterministic Systems Engineering for AI-Assisted Software Development**
 
-### 🚀 Public Tools vs. Commercial Pro Bundle
+*We build production-grade specification engines, negative constraint matrices, and agent guardrails that stop LLMs from hallucinating broken architecture.*
 
-| Capability | Community (Free) | Pro Bundle (Commercial) |
-| :--- | :---: | :---: |
-| **Cursor Agent Workflows** | Core Rules (5) | Full Suite (35+) |
-| **Claude Code Subagents** | Basic Scripts | Multi-Agent Orchestration |
-| **CI/CD Code Review Hooks** | ❌ | GitHub Actions + Hooks |
-| **Production Architecture Rules** | ❌ | TypeScript, Python, Next.js, Go |
-| **Commercial License** | MIT | Lifetime Commercial License |
-| **Continuous Updates** | Manual Pulls | Priority Commits & New Skills |
+[Explore Free Rules](https://github.com/CodifiedLabs/spec-to-code-rules) • [Get Pro Access](https://checkout.dodopayments.com/buy/your-id) • [Architecture Manifesto](https://github.com/CodifiedLabs/.github/blob/main/ARCHITECTURE.md) • [Enterprise Inquiries](mailto:enterprise@codifiedlabs.dev)
 
 ---
 
-### 📦 Get Instant Access to Pro
+</div>
 
-1. **Purchase Access:** Complete checkout via our secure payment gateway:  
-   👉 **[Get Instant Access via Dodo Payments](https://checkout.dodopayments.com/buy/your-product-id)**
-2. **Include Your Handle:** Enter your GitHub username in the required field at checkout.
-3. **Receive Repo Access:** You will be automatically added as an outside collaborator to `CodifiedLabs/cursor-agent-skills-pro`.
-4. **Accept the Invite:** Check your email or visit `https://github.com/CodifiedLabs/cursor-agent-skills-pro` to accept.
+## The Engineering Problem We Solve
+
+Large language models (Claude 3.7/Sonnet, GPT-4o, Codex) are proficient at generating localized code blocks, but they fail catastrophically at **architectural state retention**:
+
+[ Traditional AI Vibe Coding ]
+Vague Prompt ──> LLM Hallucinates Schema ──> Broken Migrations ──> 15 hrs Refactoring
+
+[ Codified Labs Spec-Driven Pipeline ]
+Vague Prompt ──> Deterministic SDD Engine ──> Strict DDL + Gherkin ──> Zero-Defect Code
+
+When developers skip formal technical specifications:
+* Relational foreign keys miss deletion cascading and index coverage.
+* Third-party webhook handlers lack atomic idempotency checks, creating financial reconciliation failures.
+* Incomplete state machines lock applications into unhandled edge states (`past_due`, `incomplete_expired`).
+
+**Codified Labs builds the control layer.** We enforce strict negative constraints and multi-turn verification passes *before* your IDE agents (Cursor, Claude Code, Windsurf, Copilot) touch your source code.
 
 ---
 
-### 💬 Inquiries & Support
+## The Codified Labs Two-Tier Ecosystem
 
-- **Bug Reports & Feedback:** [Open a Discussion](https://github.com/CodifiedLabs/cursor-agent-skills/discussions)
-- **Enterprise Licensing:** For team access or invoicing questions, open a ticket via GitHub Discussions.
+Our architecture is bifurcated into a public open-source foundation and a private, hardened commercial vault.
+
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│                                     CODIFIED LABS                                       │
+└────────────────────────────────────────────┬────────────────────────────────────────────┘
+│
+┌───────────────────────┴───────────────────────┐
+▼                                               ▼
+[ PUBLIC TIER: Open-Core Engine ]               [ PRIVATE TIER: Enterprise Vault ]
+repo: spec-to-code-rules                        repo: spec-to-code-rules-pro
+─────────────────────────────────               ──────────────────────────────────
+• 100% Free & Open-Source (MIT)                 • Commercial Team License ($199)
+• Happy-Path Prototype Specs                    • Full PostgreSQL DDL (UUIDv7, Indexes)
+• IDE Adapters (Cursor, Claude, Copilot)        • RFC 7807 API & Idempotency Engines
+• Rapid Feature Scoping                         • Multi-Scenario Gherkin Failure Matrices
+• Community-Driven                              • Automated CLI Scaffolder (npx)
+
+### 1. The Public Tier: `spec-to-code-rules`
+Our open-source contribution to the developer ecosystem. It delivers a streamlined spec-driven development rule designed for rapid MVP creation, hackathons, and prototype feature branches.
+
+* **Status:** Public / MIT Licensed.
+* **Included Engines:** `SPEC_LITE.md`.
+* **Included Adapters:** `.cursorrules`, `CLAUDE.md`, `.github/copilot-instructions.md`, `AGENTS.md`.
+* **Inspect the Repo:** [`CodifiedLabs/spec-to-code-rules`](https://github.com/CodifiedLabs/spec-to-code-rules)
+
+### 2. The Private Tier: `spec-to-code-rules-pro`
+Our commercial software development suite for engineering agencies, funded startups, and tech leads who cannot afford schema hallucinations or client delivery delays.
+
+* **Status:** Private GitHub Repository.
+* **Access Model:** Automatically granted via [Dodo Payments](https://checkout.dodopayments.com/buy/your-id) using GitHub OAuth collaboration invites.
+* **Deliverables:**
+  * **PRD Architecture Engine:** Deep product boundary extraction and negative constraints.
+  * **Tech Spec & Schema Engine:** Strict PostgreSQL DDL, index justifications, zero-downtime migration scripts, and RFC 7807 API error handling.
+  * **Feature Spec & Gherkin Engine:** Exhaustive failure-state matrices (race conditions, network dropouts, unauthorized privilege escalation).
+  * **Zero-Dependency CLI:** Run `npx @codifiedlabs/spec-to-code init` directly in any project root to configure rules across Cursor, Claude Code, and Copilot in seconds.
+
+---
+
+## Sneak Peek: What Pro Delivers
+
+Here is the exact difference between standard LLM code generation and a specification generated by the Codified Labs Pro Suite for a multi-tenant billing system:
+
+| Dimension | Standard IDE Generation | Codified Labs Pro Specification |
+| :--- | :--- | :--- |
+| **Primary Keys** | Auto-incrementing `SERIAL` / `INT` | Time-ordered, collision-proof `UUIDv7` |
+| **Data Integrity** | Naive status string (e.g., `status = "active"`) | Explicit PostgreSQL `CHECK` constraints covering full lifecycle states |
+| **Concurrency** | Blind row updates (High race condition risk) | Mandatory Redis/Postgres transaction locks + `Idempotency-Key` headers |
+| **API Envelope** | Ad-hoc JSON (`{ error: "failed" }`) | RFC 7807 compliant Problem Details with deterministic machine codes |
+| **Test Coverage** | Single happy-path unit test | 4-scenario Gherkin matrix covering timeouts, duplicate payloads, and replays |
+
+---
+
+## Services & Bespoke Engineering
+
+Beyond our core specification suites, Codified Labs partners with select technical agencies, venture studios, and engineering organizations to build custom AI developer infrastructure:
+
+* **Custom Agent Workflows:** Creation of bespoke `.cursor/rules` and multi-turn Claude Code skills tailored to proprietary enterprise design systems and private microservice architectures.
+* **Context Window Optimization:** Pruning bloated legacy internal prompt instructions to cut token spend and eliminate attention dilution.
+* **Spec-Driven Team Training:** Operational workshops for engineering leads transitioning teams from manual coding to Spec-Driven AI workflows.
+
+For bespoke engineering inquiries: **`enterprise@codifiedlabs.dev`**
+
+---
+
+## Security, Privacy & Intellectual Property
+
+* **100% Local Execution:** Every rule, skill, and specification engine created by Codified Labs runs entirely on your local machine inside your configured IDE.
+* **Zero Telemetry:** We collect zero analytics, zero codebase telemetry, and zero prompt contents.
+* **Data Isolation:** We do not host intermediate LLM proxies. Your queries flow directly between your machine and your designated AI provider (Anthropic, OpenAI, GitHub).
+
+---
+
+<div align="center">
+
+**Codified Labs**  
+*Building the architectural rails for the agentic software era.*
+
+`git clone https://github.com/CodifiedLabs/spec-to-code-rules.git`
+
+</div>
