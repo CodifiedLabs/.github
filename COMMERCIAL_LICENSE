@@ -1,0 +1,31 @@
+# Codified Labs Commercial Licensing Terms
+### Applied to `spec-to-code-rules-pro` and Associated Private Assets
+
+Last Updated: September 2026
+
+---
+
+## 1. Grant of License
+
+Upon payment of the applicable Team License fee through our designated Merchant of Record (Dodo Payments), Codified Labs grants the purchasing entity (individual, company, or agency) a **perpetual, worldwide, non-exclusive, non-transferable commercial license** to:
+
+* Access, clone, fork, and maintain private copies of `spec-to-code-rules-pro`.
+* Incorporate the rule sets, prompts, templates, and scaffolding scripts into an unlimited number of commercial projects, client codebases, and proprietary repositories.
+* Distribute compiled or generated software outputs without attribution or royalty obligations to Codified Labs.
+
+---
+
+## 2. Restrictions
+
+The commercial license explicitly prohibits the following:
+
+* **Public Redistribution:** You may not publish, open-source, or make publicly accessible the raw markdown rules, prompts, or proprietary CLI scripts found inside `spec-to-code-rules-pro`.
+* **Resale & Sub-licensing:** You may not repackage, re-license, sell, or include these system prompts in a competing prompt pack, AI skill registry, or marketplace listing.
+* **Extraction:** You may not extract the negative constraint matrices for inclusion in public open-core templates.
+
+---
+
+## 3. Team & Seat Boundaries
+
+* **Individual Seat (FREE Tier):** Valid for a single developer's personal machine and private development workspaces.
+* **Team License ($150 Tier):** Valid for all internal engineering staff, contractors, and agents working directly on behalf of the purchasing entity or agency.
